@@ -1,13 +1,10 @@
 import Ember from "ember";
+import PromiseMixin from "ember-promise/mixins/promise";
 
 export default Ember.Controller.extend({
     actions: {
         save: function(callback) {
-          var promise = new Ember.RSVP.Promise(function(resolve) {
-            window.setTimeout(function() {
-              resolve(1);
-            }, 3000);
-          });
+          var promise = PromiseMixin.xhr("/api/todos");
 
           callback(promise);
 

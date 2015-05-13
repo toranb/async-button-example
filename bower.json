@@ -1,8 +1,9 @@
 {
   "name": "async-button-spike",
   "dependencies": {
-    "jquery": "^1.11.1",
-    "ember": "1.10.0",
+    "jquery": "^2.1.1",
+    "ember": "1.11.3",
+    "fauxjax": "1.0.4",
     "ember-resolver": "~0.1.12",
     "loader.js": "ember-cli/loader.js#3.2.0",
     "ember-cli-shims": "ember-cli/ember-cli-shims#0.0.3",

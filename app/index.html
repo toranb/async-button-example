@@ -18,6 +18,20 @@
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
+
+    <script>
+      $.fauxjax.new({
+        request: {
+          method: "GET",
+          url: "/api/todos"
+        },
+        response: {
+          content: [],
+          responseTime: 3000
+        }
+      });
+    </script>
+
     <script src="assets/async-button-spike.js"></script>
 
     {{content-for 'body-footer'}}
